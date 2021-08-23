@@ -4,6 +4,24 @@ $clr-secondary: #1ac888;
 $clr-error: #d32752;
 $clr-info: #f6c31c;
 
+// color palette
+$colors: (
+  "primary": $clr-primary,
+  "secondary": $clr-secondary,
+  "error": $clr-error,
+  "info": $clr-info,
+  "blue": #1919e6,
+  "red": #e61919,
+  "yellow": #e6e619,
+  "green": #19e635,
+  "orange": #ffa600,
+  "purple": #9900ff,
+  "gray": #808080,
+  "black": black,
+  "white": white,
+);
+
+
 // variables spacing
 $base-padding: 0.75rem;
 $base-margin: 0.75rem;
@@ -11,3 +29,13 @@ $base-margin: 0.75rem;
 // variables bordure
 $base-border-thickness: 1px;
 $base-border-radius: 20px;
+
+// variables box-shadow
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+
+//variables typo
+$ff-base: 1rem;
+$ff-sm: $ff-base * 0.75;
+$ff-lg: $ff-base * 1.5;
+$ff-xl: $ff-base * 2;
+$ff-xxl: $ff-base * 3;
