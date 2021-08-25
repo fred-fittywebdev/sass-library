@@ -11,7 +11,19 @@
       }
 }
 
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    z-index: 1;
+  }
+
+  // exemple  @include position(absolute, $top: 1em, $left: 50%);
 .navbar {
+    @include position(static);
     @extend %flex-layout;
     padding: $base-padding $base-padding * 2;
     box-shadow: $base-box-shadow;

@@ -1,8 +1,8 @@
 // variables couleurs
-$clr-primary: #326dee;
-$clr-secondary: #1ac888;
-$clr-error: #d32752;
-$clr-info: #f6c31c;
+$clr-primary: #326dee !default;
+$clr-secondary: #1ac888 !default;
+$clr-error: #d32752 !default;
+$clr-info: #f6c31c !default;
 
 // color palette
 $colors: (
@@ -23,19 +23,19 @@ $colors: (
 
 
 // variables spacing
-$base-padding: 0.75rem;
-$base-margin: 0.75rem;
+$base-padding: 0.75rem !default;
+$base-margin: 0.75rem !default;
 
 // variables bordure
-$base-border-thickness: 1px;
-$base-border-radius: 20px;
+$base-border-thickness: 1px !default;
+$base-border-radius: 20px !default;
 
 // variables box-shadow
-$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1) !default;
 
 //variables typo
-$ff-base: 1rem;
-$ff-sm: $ff-base * 0.75;
-$ff-lg: $ff-base * 1.5;
-$ff-xl: $ff-base * 2;
-$ff-xxl: $ff-base * 3;
+$ff-base: 1rem !default;
+$ff-sm: $ff-base * 0.75 !default;
+$ff-lg: $ff-base * 1.5 !default;
+$ff-xl: $ff-base * 2 !default;
+$ff-xxl: $ff-base * 3 !default;
