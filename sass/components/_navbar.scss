@@ -1,0 +1,39 @@
+%flex-layout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    @include md {
+        flex-direction: row;
+      }
+}
+
+.navbar {
+    @extend %flex-layout;
+    padding: $base-padding $base-padding * 2;
+    box-shadow: $base-box-shadow;
+
+    .logo {
+        font-size: $ff-lg;
+    }
+
+    .container {
+        @extend %flex-layout;
+    }
+}
+
+.nav__list {
+    width: 35%;
+    @extend %flex-layout;
+    justify-content: flex-end
+}
+
+@each $key, $val in $colors {
+    .navbar-#{$key} {
+        @extend .navbar;
+        background-color: $val;
+    }
+}
